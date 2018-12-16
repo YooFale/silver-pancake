@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:01 +0800] "GET /admin/type_template.html HTTP/1.1" 200 9213 http-bio-9101-exec-1 35
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:01 +0800] "GET /js/service/specificationService.js HTTP/1.1" 200 1006 http-bio-9101-exec-2 2
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:01 +0800] "GET /js/service/brandService.js HTTP/1.1" 200 954 http-bio-9101-exec-3 3
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:01 +0800] "GET /js/controller/baseController.js HTTP/1.1" 200 1331 http-bio-9101-exec-4 2
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:01 +0800] "GET /js/controller/typeTemplateController.js HTTP/1.1" 200 2836 http-bio-9101-exec-5 3
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:03 +0800] "GET /specification/selectOptionList.do HTTP/1.1" 200 161 http-bio-9101-exec-8 1851
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:03 +0800] "GET /brand/selectOptionList.do HTTP/1.1" 200 556 http-bio-9101-exec-9 1851
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:03 +0800] "POST /typeTemplate/search.do?page=1&rows=10 HTTP/1.1" 200 1005 http-bio-9101-exec-7 1826
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:03 +0800] "POST /typeTemplate/search.do?page=1&rows=10 HTTP/1.1" 200 1005 http-bio-9101-exec-7 8
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:09 +0800] "GET /typeTemplate/findOne.do?id=37 HTTP/1.1" 200 442 http-bio-9101-exec-7 7
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:10 +0800] "GET /plugins/select2/select2x2.png HTTP/1.1" 200 845 http-bio-9101-exec-7 6
+0:0:0:0:0:0:0:1 - - [16/Dec/2018:13:00:15 +0800] "GET /typeTemplate/findOne.do?id=37 HTTP/1.1" 200 442 http-bio-9101-exec-7 13
