@@ -30,7 +30,6 @@ app.controller('baseController' ,function($scope){
 		}
 	}
 	
-	
 	$scope.jsonToString=function(jsonString,key){
 		
 		var json= JSON.parse(jsonString);
@@ -45,5 +44,13 @@ app.controller('baseController' ,function($scope){
 				
 		return value;
 	}
-	
+	//在list集合中查询某key的值
+	$scope.searchObjectByKey=function(list,key,keyValue){
+		for(var i=0;i<list.length;i++){
+			if(list[i][key]==keyValue){
+				return list[i];
+			}			
+		}		
+		return null;
+	}
 });	
