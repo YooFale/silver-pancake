@@ -1,10 +1,13 @@
 /Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/SpecificationController.java
-/Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java
 /Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/SpecificationOptionController.java
+/Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/ContentController.java
+/Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java
 /Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/GoodsDescController.java
+/Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/ContentCategoryController.java
 /Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/ItemController.java
-/Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/LoginController.java
 /Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/TypeTemplateController.java
+/Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/LoginController.java
 /Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/GoodsController.java
 /Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/SellerController.java
+/Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/UploadController.java
 /Users/yoofale/Documents/pinyougou/pinyougou-parent/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/ItemCatController.java

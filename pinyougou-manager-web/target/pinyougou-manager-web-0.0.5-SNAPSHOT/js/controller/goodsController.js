@@ -95,6 +95,7 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService,it
 		goodsService.updateStatus($scope.selectIds,status).success(
 		function(response){
 			if(response.success){
+				alert(1);
 				$scope.reloadList();//刷新页面
 				$scope.selectIds=[];//清空id集合
 			}else{
