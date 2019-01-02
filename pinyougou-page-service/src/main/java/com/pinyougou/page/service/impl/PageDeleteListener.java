@@ -21,7 +21,7 @@ public class PageDeleteListener implements MessageListener {
 		ObjectMessage objectMessage= (ObjectMessage)message;		
 		try {
 			Long[] goodsIds = (Long[]) objectMessage.getObject();
-			System.out.println("ItemDeleteListener监听接收到消息..."+goodsIds);
+			System.out.println("ItemDeleteListener监听接收到消息:"+goodsIds);
 			boolean b = itemPageService.deleteItemHtml(goodsIds);
 			System.out.println("网页删除结果："+b);			
 		} catch (JMSException e) {
