@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -45,7 +46,7 @@ public class CartController {
 		List<Cart> cartList_cookie = JSON.parseArray(cartListString, Cart.class);
 		
 		if(username.equals("anonymousUser")){//如果未登录
-			System.out.println("从cookie中提取购物车");
+			System.out.println("从Cookie中提取购物车");
 			
 			return cartList_cookie;
 		}else{//如果已登录
@@ -68,7 +69,13 @@ public class CartController {
 	}
 
 	@RequestMapping("/addGoodsToCartList")
+	@CrossOrigin(origins="http://localhost:9105",allowCredentials="true")
 	public Result addGoodsToCartList(Long itemId, Integer num) {
+		/*
+		response.setHeader("Access-Control-Allow-Origin", "http://localhost:9105");//可以访问的域
+		//如果需要涉及对Cookie的操作(允许携带凭证Cookie,如果允许携带Cookie,可以访问的域不能是通配符)
+		response.setHeader("Access-Control-Allow-Credentials", "true");
+		*/
 		
 		String username = SecurityContextHolder.getContext().getAuthentication().getName();
 		System.out.println("当前登录名:"+username);
