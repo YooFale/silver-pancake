@@ -11,11 +11,13 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.pinyougou.mapper.TbOrderItemMapper;
 import com.pinyougou.mapper.TbOrderMapper;
+import com.pinyougou.mapper.TbPayLogMapper;
 import com.pinyougou.order.service.OrderService;
 import com.pinyougou.pojo.TbOrder;
 import com.pinyougou.pojo.TbOrderExample;
 import com.pinyougou.pojo.TbOrderExample.Criteria;
 import com.pinyougou.pojo.TbOrderItem;
+import com.pinyougou.pojo.TbPayLog;
 import com.pinyougou.pojogroup.Cart;
 
 import entity.PageResult;
@@ -58,6 +60,10 @@ public class OrderServiceImpl implements OrderService {
 	
 	@Autowired
 	private TbOrderItemMapper orderItemMapper;
+	
+	@Autowired
+	private TbPayLogMapper payLogMapper;
+	
 	/**
 	 * 增加
 	 */
@@ -99,7 +105,7 @@ public class OrderServiceImpl implements OrderService {
 			tbOrder.setPayment(new BigDecimal(money));//合集
 			orderMapper.insert(tbOrder);
 		}
-		
+
 		// 3.清除redis购物车
 		redisTemplate.boundHashOps("cartList").delete(order.getUserId());
 	}

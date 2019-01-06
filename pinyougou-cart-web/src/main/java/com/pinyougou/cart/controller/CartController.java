@@ -69,7 +69,7 @@ public class CartController {
 	}
 
 	@RequestMapping("/addGoodsToCartList")
-	@CrossOrigin(origins="http://localhost:9105",allowCredentials="true")
+//	@CrossOrigin(origins="http://localhost:9105",allowCredentials="true")
 	public Result addGoodsToCartList(Long itemId, Integer num) {
 		/*
 		response.setHeader("Access-Control-Allow-Origin", "http://localhost:9105");//可以访问的域
